@@ -20,13 +20,13 @@ RUN     apk update && apk upgrade && apk add bash && \
 	rm -rf /shellinabox && \
 	\
 	apk del build-deps && rm -rf /var/cache/apk/ && \
-	apk add --no-cache --update vim git 
+	apk add --no-cache --update vim 
 
 #	chown -R co-qu:co-qu /home/co-qu/iks 
 
 EXPOSE  4200
 
 USER 	co-qu
-RUN	git clone https://github.com/ka-r-ol/iks.git  /home/co-qu/iks 
+#RUN	git clone https://github.com/ka-r-ol/iks.git  /home/co-qu/iks 
 
-CMD ["/shellinaboxd", "--no-beep", "--disable-peer-check", "--disable-ssl", "--service=/:co-qu:co-qu:/:/bin/bash /work/.data/start_menu.sh"]
+CMD ["/shellinaboxd", "--no-beep", "--disable-peer-check", "--disable-ssl", "--service=/:co-qu:co-qu:/:/bin/bash /work/.submodules/start_menu.sh"]
