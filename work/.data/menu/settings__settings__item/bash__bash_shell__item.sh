@@ -1,0 +1,3 @@
+cd /home/co-qu
+echo ... type exit to return to iks menu ...
+/bin/bash

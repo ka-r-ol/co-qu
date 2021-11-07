@@ -1,0 +1,15 @@
+version: '3'
+services:
+  xpanel:
+    build: panel
+    ports: 
+      - '8888:8888'
+    volumes:
+      - ./work:/home/jovyan/work
+  xdata_manager:
+    hostname: data_manager
+    build: data_manager
+    ports: 
+      - '4200:4200'
+    volumes:
+      - ./work:/work

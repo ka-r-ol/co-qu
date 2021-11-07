@@ -1,0 +1,1 @@
+vim /work/.data/menu
