@@ -1,15 +1,23 @@
 version: '3'
 services:
-  xpanel:
-    build: panel
-    ports: 
-      - '8888:8888'
-    volumes:
-      - ./work:/home/jovyan/work
+  # xpanel:
+  #   container_name: xpanel
+  #   build: panel
+  #   ports: 
+  #     - '8888:8888'
+  #   volumes:
+  #     - ./work:/home/jovyan/work
   xdata_manager:
+    container_name: xdata_manager
     hostname: data_manager
     build: data_manager
     ports: 
       - '4200:4200'
     volumes:
       - ./work:/work
+  # xsonarqube:
+  #   container_name: xsonarqube
+  #   image: sonarqube:9.1.0-community
+  #   ports: 
+  #     - '9000:9000'
+

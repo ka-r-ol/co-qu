@@ -1,3 +1,6 @@
 [submodule "work/.submodules/iks"]
 	path = work/.submodules/iks
 	url = https://github.com/ka-r-ol/iks.git
+[submodule "work/.submodules/co-qu-sonar-plugins"]
+	path = work/.submodules/co-qu-sonar-plugins
+	url = https://github.com/ka-r-ol/co-qu-sonar-plugins.git
